@@ -1,3 +1,5 @@
+env:
+  DEV: "true"
 steps:
   - label: ":hammer: Example Script"
-    command: "echo $$BUILDKITE_COMMIT"
+    command: "echo ${DEV}"
