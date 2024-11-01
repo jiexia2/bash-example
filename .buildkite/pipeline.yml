@@ -1,3 +1,5 @@
+env:
+  SERVICE_NAME: ${SERVICE_NAME:-foo}
 steps:
   - group: testing
     key: "testing"
@@ -6,7 +8,7 @@ steps:
         command: "echo step 1 in testing group $$BUILDKITE_PIPELINE_SLUG"
         key: "step-1-in-testing"
       - label: "echo step 2 in testing group"
-        command: "echo step 2 in testing group"
+        command: "echo step 2 in testing group ${SERVICE_NAME}"
         key: "step-2-in-testing"
   - group: sandbox
     key: "sandbox"
