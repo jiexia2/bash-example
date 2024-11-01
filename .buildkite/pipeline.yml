@@ -2,6 +2,4 @@ env:
   DEV: "true"
 steps:
   - label: ":hammer: Example Script"
-    env:
-      DEV: "nothing"
     command: "echo ${DEV}"
