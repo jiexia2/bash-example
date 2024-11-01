@@ -17,3 +17,5 @@ steps:
       - label: "echo step 2 in testing group"
         command: "echo step 2 in sandbox group"
         key: "step-2-in-sandbox"
+    depends_on:
+      - step: testing
