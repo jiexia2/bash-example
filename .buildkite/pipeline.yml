@@ -8,3 +8,12 @@ steps:
       - label: "echo step 2 in testing group"
         command: "echo step 2 in testing group"
         key: "step-2-in-testing"
+  - group: sandbox
+    key: "sandbox"
+    steps:
+      - label: "echo step 1 in sandbox group"
+        command: "echo step 1 in sandbox group"
+        key: "step-1-in-sandbox"
+      - label: "echo step 2 in testing group"
+        command: "echo step 2 in sandbox group"
+        key: "step-2-in-sandbox"
