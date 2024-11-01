@@ -1,4 +1,3 @@
 steps:
   - label: ":hammer: Example Script"
-    command: "script.sh"
-    artifact_paths: "artifacts/*"
+    command: "echo $$BUILDKITE_COMMIT"
