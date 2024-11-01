@@ -3,3 +3,5 @@ env:
 steps:
   - label: ":hammer: Example Script"
     command: "echo ${DEV}"
+    env:
+      DEV: "nothing"
