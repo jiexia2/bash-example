@@ -3,7 +3,7 @@ steps:
     key: "testing"
     steps:
       - label: "echo step 1 in testing group"
-        command: "echo step 1 in testing group"
+        command: "echo step 1 in testing group $$BUILDKITE_PIPELINE_SLUG"
         key: "step-1-in-testing"
       - label: "echo step 2 in testing group"
         command: "echo step 2 in testing group"
