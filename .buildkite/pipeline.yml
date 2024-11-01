@@ -1,5 +1,5 @@
 env:
-  SERVICE_NAME: ${SERVICE_NAME:-"foo"}
+  SERVICE_NAME: ${SERVICE_NAME:-''}
 steps:
   - group: testing
     key: "testing"
